@@ -46,7 +46,7 @@ class StringQueueTest {
     @Test
     @DisplayName("Testing default constructor")
     public void testDefaultConstructor(){
-        assertEquals(5,queueObject.getMaxSize());
+        assertEquals(5,emptyQueueObject.getMaxSize());
     }
 
     /**
@@ -54,9 +54,10 @@ class StringQueueTest {
      */
     @Test
     @DisplayName("Testing constructor")
-    public void testConstructor(){
-        assertEquals(queueObject.getMaxSize(),4);
-        assertEquals(emptyQueueObject.getMaxSize(), 1);
+    public void testStringQueueConstructor(){
+        assertEquals(emptyQueueObject.getMaxSize(), 2);
+        assertEquals(queueObject.getMaxSize(), 3);
+
     }
 
 }
