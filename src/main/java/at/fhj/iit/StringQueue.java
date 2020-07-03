@@ -26,9 +26,9 @@ public class StringQueue implements IQueue {
     //default constructor was missing
     public StringQueue() {
     }
-    //this. was missing @ maxSize = maxSize.
+    //maxSize = maxSize should be this.maxSize = maxsize; small (s) otherwise it doesn't change the maxSize variable
     public StringQueue(int maxsize) {
-        this.maxSize = maxSize;
+        this.maxSize = maxsize;
     }
 
     @Override
