@@ -24,9 +24,11 @@ class StringQueueTest {
      * The setup phase
      */
     @BeforeEach
-    public void setup(){
+    public void setUp(){
         emptyQueueObject = new StringQueue();
-        queueObject = new StringQueue(4);
+        queueObject = new StringQueue(2);
+        queueObject.offer("Test 1");
+        queueObject.offer("Test 2");
     }
 
     /**
@@ -38,7 +40,23 @@ class StringQueueTest {
         queueObject = null;
     }
 
+    /**
+     * Testing default constructor
+     */
+    @Test
+    @DisplayName("Testing default constructor")
+    public void testDefaultConstructor(){
+        assertEquals(5,queueObject.getMaxSize());
+    }
 
-
+    /**
+     * Testing the constructor
+     */
+    @Test
+    @DisplayName("Testing constructor")
+    public void testConstructor(){
+        assertEquals(queueObject.getMaxSize(),4);
+        assertEquals(emptyQueueObject.getMaxSize(), 1);
+    }
 
 }
