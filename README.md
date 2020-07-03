@@ -1,6 +1,6 @@
 # Software Configuration Management
 
-### **Contributors:**
+## **Contributors:**
 
 [Martin Feichtinger](https://github.com/martinf13/) (FH Campus02)
 
@@ -12,7 +12,7 @@
 In this exercise we have to find 3 mistakes in the StringQueue class and fix them. After that it is required to create
 an own class which implements a queue with generics. At the end 
 
-### Task list:
+#### Task list:
 
 - [x] create a new **git repository**
 
@@ -22,13 +22,13 @@ an own class which implements a queue with generics. At the end
 
 - [x] **add src** files from Michael Ulm repository
 
-- [] **search for bugs and fix them**
+- [ ] **search for bugs and fix them**
 
-- [] after fixing the bugs implement a 100% test coverage
+- [ ] after fixing the bugs implement a 100% test coverage
 
-- [] create a **new implemention** of the Queue with generics
+- [ ] create a **new implemention** of the Queue with generics
 
-- [] implement test for the Queue with generics
+- [ ] implement test for the Queue with generics
  
-- [] create **Maven Site Documentation**
+- [ ] create **Maven Site Documentation**
 
