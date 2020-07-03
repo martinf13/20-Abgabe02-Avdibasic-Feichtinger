@@ -26,9 +26,9 @@ an own class which implements a queue with generics. At the end
 
 - [x] after fixing the bugs implement a 100% test coverage for StringQueue.java
 
-- [ ] create a **new implemention** of the Queue with generics
+- [x] create a **new implemention** of the Queue with generics
 
-- [ ] implement test for the Queue with generics
+- [x] implement test for the Queue with generics
  
 - [ ] create **Maven Site Documentation**
 
