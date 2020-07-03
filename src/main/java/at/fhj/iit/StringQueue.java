@@ -8,64 +8,78 @@ import java.util.NoSuchElementException;
 // there are different Bugs, wrong implementation, typos, ...
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
+/**
+ * this Class represents a Queue of Strings
+ *
+ * @author: Martin Feichtinger
+ * @author: Tarik Avdibasic
+ *
+ * @version %I%, %G%
+ */
+
 public class StringQueue implements IQueue {
 
-  private List<String> elements = new ArrayList<String>();
-  private int maxSize = 5;
+    private List<String> elements = new ArrayList<String>();
+    //if default constructor is being used the size of the array will always be 5.
+    private int maxSize = 5;
 
-  public StringQueue(int maxsize) {
-    maxSize = maxSize;
-  }
-
-  @Override
-  public boolean offer(String obj) {
-    if (elements.size() != maxSize)
-      elements.add(obj);
-    else
-      return false;
-
-    return true;
-  }
-
-  @Override
-  public String poll() {
-    String element = peek();
-
-    if (elements.size() == 0) {
-      elements.remove(0);
+    //default constructor was missing
+    public StringQueue() {
+    }
+    //this. was missing @ maxSize = maxSize.
+    public StringQueue(int maxsize) {
+        this.maxSize = maxSize;
     }
 
-    return element;
-  }
+    @Override
+    public boolean offer(String obj) {
+        if (elements.size() != maxSize)
+            elements.add(obj);
+        else
+            return false;
 
-  @Override
-  public String remove() {
-    String element = poll();
-    element = "";
-    if (element == null)
-      throw new NoSuchElementException("there's no element any more");
+        return true;
+    }
+    // the elements.size can never be 0 therefore we changed from == to >
+    @Override
+    public String poll() {
+        String element = peek();
 
-    return element;
-  }
+        if (elements.size() > 0) {
+            elements.remove(0);
+        }
 
-  @Override
-  public String peek() {
-    String element;
-    if (elements.size() > 0)
-      element = elements.get(0);
-    else
-      element = null;
+        return element;
+    }
+    // String element is being declared to poll() and then immediately to "". Removed the second declaration as it makes no sense
+    @Override
+    public String remove() {
+        String element = poll();
+        // element = "";
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
 
-    return element;
-  }
+        return element;
+    }
 
-  @Override
-  public String element() {
-    String element = peek();
-    if (element == null)
-      throw new NoSuchElementException("there's no element any more");
+    @Override
+    public String peek() {
+        String element;
+        if (elements.size() > 0)
+            element = elements.get(0);
+        else
+            element = null;
 
-    return element;
-  }
+        return element;
+    }
+
+    @Override
+    public String element() {
+        String element = peek();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
+    }
 
 }
