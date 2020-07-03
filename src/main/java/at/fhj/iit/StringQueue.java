@@ -20,8 +20,8 @@ import java.util.NoSuchElementException;
 public class StringQueue implements IQueue {
 
     private List<String> elements = new ArrayList<String>();
-    //if default constructor is being used the size of the array will always be 5.
-    private int maxSize = 5;
+    //removed declaration for maxSize as it should not be preset and we are declaring the size in the normal constructor
+    private int maxSize;
 
     //default constructor was missing
     public StringQueue() {
@@ -82,4 +82,7 @@ public class StringQueue implements IQueue {
         return element;
     }
 
+    public int getMaxSize() {
+        return maxSize;
+    }
 }
