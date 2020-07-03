@@ -17,7 +17,7 @@ import java.util.NoSuchElementException;
  * @version %I%, %G%
  */
 
-public class StringQueue implements IQueue {
+public class StringQueue<String> implements IQueue<String> {
 
     private List<String> elements = new ArrayList<String>();
     //removed declaration for maxSize as it should not be preset and we are declaring the size in the normal constructor
