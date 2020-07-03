@@ -1,4 +1,4 @@
-##Queue Exercise
+#Queue Exercise
 
 #### About Queue - Basic Informations
 > Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. 
