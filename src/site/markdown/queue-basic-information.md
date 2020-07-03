@@ -5,7 +5,7 @@
 > One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). 
 > Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
 
-#### Basic methods
+## Basic methods 
 > _***Queue data structure***_
 > ![Queue data structure](../resources/images/queue-data-structure.png)
 >
@@ -14,6 +14,7 @@
 > ![Queue-Real life example](../resources/images/queue-example.png)
 >
 >
+#### Basic methods description
 > _***offer()***_
 > Add (store) an item to the queue.
 >
