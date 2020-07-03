@@ -6,26 +6,31 @@
 > Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
 
 #### Basic methods
-> _*Queue data structure*_
+> _***Queue data structure***_
 > ![Queue data structure](../resources/images/queue-data-structure.png)
 >
-> _*Queue real life example*_
+>
+> _***Queue real life example***_
 > ![Queue-Real life example](../resources/images/queue-example.png)
 >
-> _**enqueue()**_
+>
+> _***offer()***_
 > Add (store) an item to the queue.
 >
-> _**dequeue()**_ 
+> _***remove()***_ 
 > Remove (access) an item from the queue.
 >
-> _**peek()**_ 
+> _***peek()***_ 
 > Gets the element at the front of the queue without removing it.
 >
-> _**isfull()**_ 
+> _***isFull()***_ 
 > Checks if the queue is full.
 >
-> _**isempty()**_ 
-> Checks if the queue is empty
+> _***element()***_ 
+> Checks if the element exists.
+>
+> _***poll()***_ 
+> Returns or delets the head (first) element.
 >
 
 
