@@ -36,3 +36,5 @@ https://github.com/michaelulm/software-configuration-management/tree/master/test
  
 - [ ] create **Maven Site Documentation**
 
+- [ ] finalize **Labreport**
+
