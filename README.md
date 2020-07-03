@@ -10,7 +10,10 @@
 ### **Queue Exercise**
 
 In this exercise we have to find 3 mistakes in the StringQueue class and fix them. After that it is required to create
-an own class which implements a queue with generics. At the end 
+an own class which implements a queue with generics. The Queue Exercise would be implemented in the Intellij IDE and 
+with the Github version control.
+We are using following Template:
+https://github.com/michaelulm/software-configuration-management/tree/master/test-automation/junit5/Queue
 
 #### Task list:
 
