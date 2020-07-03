@@ -28,25 +28,11 @@ public class GenericQ<T> implements IQueue<T>{
     private int maxSize;
 
     /**
-     * maxSize getter method
+     * GenericQ default constructor
      *
-     * @return returns back the maximum size
      */
-    public int getMaxSize() {
-        return maxSize;
+    public GenericQ() {
     }
-
-
-    /**
-     * maxSize setter method
-     *
-     * @return sets the maximum size
-     */
-    public void setMaxSize(int maxSize) {
-        this.maxSize = maxSize;
-    }
-
-
 
     /**
      * GenericQ constructor
@@ -54,10 +40,17 @@ public class GenericQ<T> implements IQueue<T>{
      * @param maxSize parameter for setting the maximum size
      */
     public GenericQ(int maxSize) {
-        setMaxSize(maxSize);
+        this.maxSize = maxSize;
     }
 
-
+    /**
+     * maxSize getter method
+     *
+     * @return returns back the maximum size
+     */
+    public int getMaxSize() {
+        return maxSize;
+    }
 
     /**
      * offer method is adding the objects to the queue
@@ -142,6 +135,11 @@ public class GenericQ<T> implements IQueue<T>{
             throw new NoSuchElementException("there's no element any more!");
         }
         return element;
+    }
+
+    public boolean isFull(){
+        if(elements.size() == maxSize) return true;
+        else return false;
     }
 
 

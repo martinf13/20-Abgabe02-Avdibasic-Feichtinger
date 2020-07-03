@@ -42,6 +42,7 @@ class StringQueueTest {
 
     /**
      * Testing default constructor
+     * Object which was created via default constructor should have MaxSize at 0
      */
     @Test
     @DisplayName("Testing default constructor")
@@ -51,6 +52,7 @@ class StringQueueTest {
 
     /**
      * Testing the constructor
+     * Object created with the size of 3 should have 3 as MaxSize
      */
     @Test
     @DisplayName("Testing constructor")
