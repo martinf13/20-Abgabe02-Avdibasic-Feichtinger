@@ -24,7 +24,7 @@ an own class which implements a queue with generics. At the end
 
 - [x] **search for bugs and fix them**
 
-- [ ] after fixing the bugs implement a 100% test coverage for StringQueue.java
+- [x] after fixing the bugs implement a 100% test coverage for StringQueue.java
 
 - [ ] create a **new implemention** of the Queue with generics
 
