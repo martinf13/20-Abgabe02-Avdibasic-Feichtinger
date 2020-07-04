@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project  name="Configuration Managment - Queue Exercise" xmlns="http://maven.apache.org/DECORATION/1.8.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 http://maven.apache.org/xsd/decoration-1.8.0.xsd"
-          combine.self="merge">
+          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 http://maven.apache.org/xsd/decoration-1.8.0.xsd">
 
     <bannerLeft>
         <name>Maven</name>
@@ -18,7 +17,6 @@
             <item name="Maven" href="http://maven.apache.org/"/>
         </links>
         <menu name="Queue Exercise -Project basic information">
-        <item name="Project introduction" href="index.html"/>
         <item name="Basic information" href="queue-basic-information.html"/>
     </menu>
     </body>

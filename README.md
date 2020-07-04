@@ -34,7 +34,7 @@ https://github.com/michaelulm/software-configuration-management/tree/master/test
 
 - [x] implement test for the Queue with generics
  
-- [ ] create **Maven Site Documentation**
+- [x] create **Maven Site Documentation**
 
-- [ ] finalize **Labreport**
+- [x] finalize **Labreport**
 
