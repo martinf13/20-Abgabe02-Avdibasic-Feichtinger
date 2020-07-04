@@ -12,34 +12,34 @@
   <url>https://github.com/martinf13/20-Abgabe02-Avdibasic-Feichtinger</url>
 
   <developers>
-  <developer>
-    <id>TarikAvdibasic90</id>
-    <name>Tarik Avdibasic</name>
-    <email>tarik.avdibasic@edu.campus02.at</email>
-    <organization>FH Campus 02</organization>
-    <roles>
-      <role>Student</role>
-    </roles>
-    <timezone>Europe/Vienna</timezone>
-    <properties>
-      <picUrl>https://avatars.githubusercontent.com/tarikavdibasic90</picUrl>
-    </properties>
-  </developer>
-  <developer>
-    <id>martinf13</id>
-    <name>Martin Feichtinger</name>
-    <email>martin.feichtinger@edu.campus02.at</email>
-    <organization>FH Campus 02</organization>
-    <roles>
-      <role>Student</role>
-    </roles>
-    <timezone>Europe/Vienna</timezone>
-    <properties>
-      <picUrl>https://avatars.githubusercontent.com/martinf13</picUrl>
-    </properties>
-  </developer>
+    <developer>
+      <id>TarikAvdibasic90</id>
+      <name>Tarik Avdibasic</name>
+      <email>tarik.avdibasic@edu.campus02.at</email>
+      <organization>FH Campus 02</organization>
+      <roles>
+        <role>Student</role>
+      </roles>
+      <timezone>Europe/Vienna</timezone>
+      <properties>
+        <picUrl>https://avatars.githubusercontent.com/tarikavdibasic90</picUrl>
+      </properties>
+    </developer>
+    <developer>
+      <id>martinf13</id>
+      <name>Martin Feichtinger</name>
+      <email>martin.feichtinger@edu.campus02.at</email>
+      <organization>FH Campus 02</organization>
+      <roles>
+        <role>Student</role>
+      </roles>
+      <timezone>Europe/Vienna</timezone>
+      <properties>
+        <picUrl>https://avatars.githubusercontent.com/martinf13</picUrl>
+      </properties>
+    </developer>
   </developers>
-
+     
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,12 +65,18 @@
       <version>5.6.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <reporting>
     <plugins>
 
-      <!-- Maven Site Plugin for Documentation -->
+      <!-- Maven Site Plugin for Documentation -->     
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
@@ -82,10 +88,10 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <!--suppress MavenModelInspection -->
         <version>3.0.0</version>
-      </plugin>
-    </plugins>
+      </plugin>  
+     </plugins>
   </reporting>
-  <!-- Maven Compiler Plugin -->
+	<!-- Maven Compiler Plugin -->
   <build>
     <plugins>
       <plugin>
@@ -96,7 +102,7 @@
           <release>11</release>
         </configuration>
       </plugin>
-      <!-- Maven Surefire Plugin -->
+	  <!-- Maven Surefire Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>

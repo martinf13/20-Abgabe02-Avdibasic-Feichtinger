@@ -125,7 +125,7 @@ public class GenericQ<T> implements IQueue<T>{
      * It works similar to peek() but with a small difference (returns but does not delete the element).
      * It throws NoSuchElementException when the queue is empty.
      *
-     * @return first element of queue if exists otherwise throws Exception if element equal null is
+     * @return first element of queue if exists, otherwise throws Exception if element equal null is
      * @throws NoSuchElementException if element equal null is
      */
     @Override
