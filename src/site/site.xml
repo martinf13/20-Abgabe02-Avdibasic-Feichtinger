@@ -16,8 +16,15 @@
         <links>
             <item name="Maven" href="http://maven.apache.org/"/>
         </links>
-        <menu name="Queue Exercise -Project basic information">
-        <item name="Basic information" href="queue-basic-information.html"/>
-    </menu>
+        <menu name="Project content">
+            <item name="Project documentation" href="project-info.html"/>
+            <item name="Queue Exercise - Information" href="queue-basic-information.html"/>
+            <item name="Project information" href="summary.html" />
+        </menu>
+        <menu name="Authors">
+            <item name="Tarik Avdibasic" href="team.html"/>
+            <item name="Martin Feichtinger" href="team.html"/>
+        </menu>
+
     </body>
 </project>
